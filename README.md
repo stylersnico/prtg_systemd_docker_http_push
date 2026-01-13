@@ -7,12 +7,9 @@ The units monitored can be services or any other type of units.
 
 Give full usage details for Docker containers on host.
 
-## Requirements
-
-- Linux
-- systemd
-- bash
-
+## Tested on
+- Debian 13 with latest docker
+- Latest release of PRTG
 
 ## How to use
 
