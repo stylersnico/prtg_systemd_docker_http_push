@@ -39,11 +39,11 @@ wget https://raw.githubusercontent.com/stylersnico/prtg_systemd_docker_http_push
 chmod +x *
 ```
 
-## Setup as HTTP Push Sensor
 
-- Configure `DockerStats4PRTGxml.sh` and `systemd_units.sh` to monitor what you need.
-- Create a new HTTP Push Data Advanced sensor in PRTG, then enter the settings and grab the "**Identification token**" in PRTG.
-- Then launch the following command to test it (adapt to the script you want to use):
+Configure `DockerStats4PRTGxml.sh` and `systemd_units.sh` to monitor what you need.
+Create a new HTTP Push Data Advanced sensor in PRTG, then enter the settings and grab the "**Identification token**" in PRTG.
+
+Then launch the following command to test it (adapt to the script you want to use):
 ```bash
 /var/prtg/scriptsxml/DockerStats4PRTGxml.sh | /var/prtg/scriptsxml/prtg_push_advanced.sh -a "http://PRTGSERVER:5050" -t "token"
 ```
