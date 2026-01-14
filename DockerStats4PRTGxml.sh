@@ -71,7 +71,7 @@ EOF
 # Collect stats
 STATS=$(docker stats --no-stream --no-trunc \
   --format "{{.Name}}\t{{.CPUPerc}}\t{{.MemUsage}}\t{{.NetIO}}" \
-  $CONTAINERS 2>/dev/null | tail -n +2)
+  $CONTAINERS 2>/dev/null | tail -n +1)
 
 # Create error file if feedback is empty
 if [[ -z "$STATS" ]]; then
